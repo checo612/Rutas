@@ -8,13 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CartItemComponent implements OnInit {
   @Input() id: number;
   @Input() name: string;
+  numero: string;
   constructor() { }
 
   ngOnInit() {
   }
 
   comprar() {
-    alert(`Se compro :${this.name}`);
+    alert(`Se compro ${this.numero} de: ${this.name}`);
   }
 
 }
